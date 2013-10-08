@@ -1,0 +1,47 @@
+.container-fluid{
+	margin: 0 auto 0 auto;
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+}
+
+.span2{
+	text-align: right;
+}
+
+.logo{
+	padding-top: 20px;
+}
+
+h1{
+	font-weight: 100;
+}
+
+.sub{
+	font-size: 20px;
+	font-weight: 400;
+	color:#9DC1A2;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+}
+
+h2{
+	font-size: 13px;
+	margin: 0 0 10px;
+	font-weight: 300;
+}
+
+p{
+	font-size: 12px;
+	font-weight: 400;
+}
+
+a.social{
+	opacity: 1;
+}
+
+.detail{
+	color:#9DC1A2;
+}
