@@ -8,42 +8,49 @@
 	<meta name="description" content="Portafolio">
 	<meta base="localhost">
 
-	<link rel="stylesheet" href="style.css" media="all"/>
+	<link rel="stylesheet" href="css/normalize.css" media="all"/>
+	<link rel="stylesheet" href="css/style.css" media="all"/>
 	<link rel="shortcut icon" href="/favicon.ico" />
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,100,700' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
 	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="span2">
 				<!--Sidebar content-->
-				<a><img class="logo" src="logo.png"></a>
-				<h1>Karen Carrera de la Barra</h1>
-				<h2>Graphic Design</h2>
+				<a><img class="logo" src="img/logo.png"></a>
+				<h1>Karen Carrera<br><span class="sub">Graphic Design</span></h1>
 				
 				<ul>
-					<a href="#"><img class="aboutme" src="img/aboutme.png"></a>
-					<h3>About me</h3>
-					<a href="#"><img class="graphic" src="img/graphic.png"></a>
-					<h3>Graphic</h3>
-					<a href="#"><img class="investigation" src="img/investigation.png"></a>
-					<h3>Study</h3>
+					<li>
+						<a class="menu" href="#"><img src="img/aboutme.png">
+						<h2>About me</h2></a>
+					</li>
+					<li>
+						<a class="menu" href="#"><img src="img/graphic.png">
+						<h2>Graphic</h2></a>
+					</li>
+					<li>
+						<a class="menu" href="#"><img src="img/investigation.png">
+						<h2>Investigation</h2></a>
+					</li>
 				</ul>
-				
+			
 				<footer id="footer">
 					<div class="social">
-						<a class="facebook" href="http://www.facebook.com/karen.carrera.delabarra" target="_blank">Facebook</a>
-						<a class="linkedin" href="http://lnkd.in/q9DUtt" target="_blank">LinkedIn</a>
-						<a class="flick" href="http://www.flickr.com/photos/karencarrera" target="_blank">Flickr</a>
+						<a href="http://www.facebook.com/karen.carrera.delabarra" target="_blank"><img src="img/Facebook.png"></a>
+						<a href="http://www.flickr.com/photos/karencarrera" target="_blank"><img src="img/Flickr.png"></a>
+						<a href="http://lnkd.in/q9DUtt" target="_blank"><img src="img/Linkedin.png"></a>
 					</div>
-		
-					<p>karen.carrera.delabarra@gmail.com</p>
-					<p>+56 9 85935466</p>
+
+					<p class="contact"><span class="detail">(mail)</span> karen.carrera[at]ead.cl<span class="detail"><br>(phone)</span> +56 9 85935466</p>
 				</footer>
 			</div>
 
 			<div class="span10">
 				<!--Body content-->
-				<h4>Título de proyecto</h4>
+				<h3>Graphic</h3>
 				
 				<div id="myCarousel" class="carousel slide">
  					<ol class="carousel-indicators">
@@ -53,14 +60,25 @@
  					</ol>
  					<!-- Carousel items -->
  					<div class="carousel-inner">
-    					<div class="active item">…</div>
-   						<div class="item">…</div>
-    					<div class="item">…</div>
+    					<div class="active item"><img alt="" src="img/proyectotitulo/IMG_6779.jpg"></div>
+   						<div class="item"><img alt="" src="img/proyectotitulo/IMG_6785.jpg"></div>
+    					<div class="item"><img alt="" src="img/proyectotitulo/IMG_6790.jpg"></div>
+    					<div class="item"><img alt="" src="img/proyectotitulo/IMG_6792.jpg"></div>
+    					<div class="item"><img alt="" src="img/proyectotitulo/IMG_6798.jpg"></div>
+    					<div class="item"><img alt="" src="img/proyectotitulo/IMG_6818.jpg"></div>
   					</div>
   					<!-- Carousel nav -->
   					<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
   					<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 				</div>
+
+				<script src="js/jquery.js"></script>
+				<script src="js/bootstrap.min.js"></script>
+				<script>
+					$(document).ready(function(){
+					$('.carousel').carousel()
+   				 });
+				</script>
 
 				<h5>Datos de proyecto</h5>
 				<p>Lorem ipsum</p>
