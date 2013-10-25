@@ -58,7 +58,7 @@ a.icon-flickr:hover {#color:#AAA; text-decoration: none;}
 
 body {
  /* background: #f9f9f3;*/
-background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSJ3aGl0ZSI+PC9yZWN0Pgo8cGF0aCBkPSJNMCA1TDUgMFpNNiA0TDQgNlpNLTEgMUwxIC0xWiIgc3Ryb2tlPSIjRUVFIiBzdHJva2Utd2lkdGg9IjEiPjwvcGF0aD4KPC9zdmc+");
+ background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSJ3aGl0ZSI+PC9yZWN0Pgo8cGF0aCBkPSJNMCA1TDUgMFpNNiA0TDQgNlpNLTEgMUwxIC0xWiIgc3Ryb2tlPSIjRUVFIiBzdHJva2Utd2lkdGg9IjEiPjwvcGF0aD4KPC9zdmc+");
 }
 
 .logo{
@@ -121,6 +121,7 @@ p.contact{
 
 .span2{
 	width: 25%;
+	height: 100%;
 	float: left;
 	text-align: right;
 	position: fixed;
@@ -174,6 +175,7 @@ h3{
 
 p{
 	font-size: 10pt;
+	line-height: 20px;
 }
 
 .text-en{
@@ -224,7 +226,7 @@ text-decoration: none;
 }
 /* Estilo miniaturas */
 .miniatura { 
-width:18%;/* 100/nºimágenes, 5 en el ejemplo */
+width:10%;/* 100/nºimágenes, 5 en el ejemplo */
 /*margin:1px;
 border: 1px solid black;*/
 opacity: 1;
