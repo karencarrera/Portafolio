@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Graphic</title>
+	<title>Project</title>
 
 	<meta name="author" content="Karen Carrera">
 	<meta name="description" content="Portafolio">
@@ -12,6 +12,28 @@
 	<link rel="stylesheet" href="css/style.css" media="all"/>
 	<link rel="shortcut icon" href="/favicon.ico" />
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,100,700' rel='stylesheet' type='text/css'>
+
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
+	<script src="jquery.carouFredSel-6.2.0-packed.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('#carousel').carouFredSel({
+				responsive: true,
+				items: {
+					visible: 1,
+					width: 900,
+					height: 500
+				},
+				scroll: {
+					duration: 250,
+					timeoutDuration: 2500,
+					fx: 'uncover-fade'
+				},
+				pagination: '#pager'
+			});
+		});
+	</script>
+
 </head>
 <body>
 	<div class="container-fluid">
@@ -20,27 +42,27 @@
 				<!--Sidebar content-->
 				<a><img class="logo" src="img/logo.png"></a>
 				<h1>Karen Carrera<br><span class="sub">Graphic Design</span></h1>
-				
+
 				<ul>
 					<li>
-						<a class="menu" href="#"><img src="img/aboutme.png">
+						<a class="menu" href="#"><img src="img/aboutme.jpg">
 						<h2>About me</h2></a>
 					</li>
 					<li>
-						<a class="menu" href="#"><img src="img/graphic.png">
+						<a class="menu" href="#"><img src="img/graphic.jpg">
 						<h2>Graphic</h2></a>
 					</li>
 					<li>
-						<a class="menu" href="#"><img src="img/investigation.png">
+						<a class="menu" href="#"><img src="img/investigation.jpg">
 						<h2>Investigation</h2></a>
 					</li>
 				</ul>
 			
 				<footer id="footer">
 					<div class="social">
-						<a href="http://www.facebook.com/karen.carrera.delabarra" target="_blank"><img src="img/Facebook.png"></a>
-						<a href="http://www.flickr.com/photos/karencarrera" target="_blank"><img src="img/Flickr.png"></a>
-						<a href="http://lnkd.in/q9DUtt" target="_blank"><img src="img/Linkedin.png"></a>
+						<a class="icon-facebook" href="http://www.facebook.com/karen.carrera.delabarra" target="_blank"></a>
+						<a class="icon-linkedin" href="http://www.flickr.com/photos/karencarrera" target="_blank"></a>
+						<a class="icon-flickr"href="http://lnkd.in/q9DUtt" target="_blank"></a>
 					</div>
 
 					<p class="contact"><span class="detail">(mail)</span> karen.carrera[at]ead.cl<span class="detail"><br>(phone)</span> +56 9 85935466</p>
@@ -50,20 +72,52 @@
 			<div class="span10">
 				<!--Body content-->
 				<h3>Graphic</h3>
-				
-				<!--categorias de proyectos-->
 
-				<div class="pagewrap">
-					<div id="container">
-						<a href="#"><img class="project" src="img/project01.png">nombre del proyecto</a>
-						<a href="#"><img class="project" src="img/project02.png">nombre del proyecto</a>
-						<a href="#"><img class="project" src="img/project03.png">nombre del proyecto</a>
-						<a href="#"><img class="project" src="img/project04.png">nombre del proyecto</a>
-						<a href="#"><img class="project" src="img/project05.png">nombre del proyecto</a>
-						<a href="#"><img class="project" src="img/project06.png">nombre del proyecto</a>
+				<div class="contenedorvisor">
+					<a href="javascript:void(0);"><img class="miniatura" src="img/proyecto1/1.jpg" /></a>
+					<a href="javascript:void(0);"><img class="miniatura" src="img/proyecto1/2.jpg" /></a>
+					<a href="javascript:void(0);"><img class="miniatura" src="img/proyecto1/3.jpg" /></a>
+					<a href="javascript:void(0);"><img class="miniatura" src="img/proyecto1/4.jpg" /></a>
+					<a href="javascript:void(0);"><img class="miniatura" src="img/proyecto1/5.jpg" /></a>
+				</div>
+
+				<div id="wrapper">
+					<div id="carousel">
+						<div><img src="img/proyecto1/1.jpg" /></div>
+						<div><img src="img/proyecto1/2.jpg" /></div>
+						<div><img src="img/proyecto1/3.jpg" /></div>
+						<div><img src="img/proyecto1/4.jpg" /></div>
+						<div><img src="img/proyecto1/5.jpg" /></div>
+						<div><img src="img/proyecto1/6.jpg" /></div>
 					</div>
 				</div>
 			</div>
+
+			<div class="span20">
+					<h5>El sentido de las palabras claves de Amereida</h5>
+					<p>
+						Proyecto de Título <br>
+						<span class="detail">Año:</span> 2012<br>
+						<span class="detail">Profesor guia:</span> Sylvia Arriagada Cordero <br>
+						<br>
+						El proyecto consiste en la realización de un libro de autor, el cual se construye a partir del estudio de los textos fundamentales de la Escuela de Arquitectura y Diseño PUCV, en donde se distinguen ciertas palabras las cuales son nombradas como “claves”. Estas palabras tienen pertinencia respecto a distintos textos donde se realiza un trabajo de intertextualidad entre ellos. El trabajo que se realiza en cada uno de los tres cuadernos es la continuidad de la lectura de éstas palabras, las cuales cada vez se leen en su propio despliegue, su espacio gráfico expuesto en horizontes y la profundización en cada cita. <br>
+						El desafío es que el despliegue de cada página de cuenta del sentido de cada palabra significante, en donde las variables gráficas dan la posibilidad de un “cada vez” contínuo en la lectura. <br>
+						El aporte es la construcción gráfica de espacios luminosos para la continuidad de la lectura en una colección de cuadernos que dan cuenta de los fundamentos de la Escuela de Arquitectura y Diseño PUCV.
+						</p>
+				</div>
+				
+				<div class="span30">
+					<h5 class="text-en">El sentido de las palabras claves de Amereida</h5>
+					<p class="text-en">Proyecto de Título <br>
+						<span class="detail">Año:</span> 2012<br>
+						<span class="detail">Profesor guia:</span> Sylvia Arriagada Cordero <br>
+						<br>
+						El proyecto consiste en la realización de un libro de autor, el cual se construye a partir del estudio de los textos fundamentales de la Escuela de Arquitectura y Diseño PUCV, en donde se distinguen ciertas palabras las cuales son nombradas como “claves”. Estas palabras tienen pertinencia respecto a distintos textos donde se realiza un trabajo de intertextualidad entre ellos. El trabajo que se realiza en cada uno de los tres cuadernos es la continuidad de la lectura de éstas palabras, las cuales cada vez se leen en su propio despliegue, su espacio gráfico expuesto en horizontes y la profundización en cada cita. <br>
+						El desafío es que el despliegue de cada página de cuenta del sentido de cada palabra significante, en donde las variables gráficas dan la posibilidad de un “cada vez” contínuo en la lectura. <br>
+						El aporte es la construcción gráfica de espacios luminosos para la continuidad de la lectura en una colección de cuadernos que dan cuenta de los fundamentos de la Escuela de Arquitectura y Diseño PUCV.
+						</p>
+				</div>
+
 		</div>
 	</div>
 	

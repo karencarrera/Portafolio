@@ -34,14 +34,25 @@
 
 .icon-facebook:before {
 	content: "\e600";
+	color:#9DC1A2
 }
 .icon-linkedin:before {
 	content: "\e601";
+	color:#9DC1A2
 }
 .icon-flickr:before {
 	content: "\e602";
+	color:#9DC1A2
 }
 
+a.icon-facebook:link {#color:#9DC1A2; text-decoration: none;}
+a.icon-facebook:hover {#color:#AAA; text-decoration: none;}
+
+a.icon-linkedin:link {#color:#9DC1A2; text-decoration: none;}
+a.icon-linkedin:hover {#color:#AAA; text-decoration: none;}
+
+a.icon-flickr:link {#color:#9DC1A2; text-decoration: none;}
+a.icon-flickr:hover {#color:#AAA; text-decoration: none;}
 /*fin icomoon*/
 
 
@@ -203,7 +214,8 @@ position: relative;
 /*--width: 600px;
 text-align:center;
 height: 560px;--*/
-margin: 10 auto;
+margin: 0 auto;
+margin-bottom: 20px;
 overflow: hidden;
 }
 .contenedorvisor a {
